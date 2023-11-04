@@ -20,11 +20,11 @@ export default function Footer() {
                    <div className="grid grid-cols-1 lg:grid-cols-2 text-white text-sm font-medium py-16 lg:py-24">
                        <div className="flex flex-col">
                            <div className="flex flex-col mx-auto lg:mx-0 md:flex-row">
-                               <div className="md:border-r-2">
+                               <div className="md:border-r-2 mx-auto md:mx-0 my-auto">
                                    {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
                                    <Image src={logo} alt="logo" className="w-64 md:w-72 md:pr-6"/>
                                </div>
-                               <div className={`font-sans ${montserrat.variable} grid grid-rows-2 leading-none my-auto md:pl-6`}>
+                               <div className={`font-sans ${montserrat.variable} grid grid-rows-2 leading-none my-auto md:pl-6 text-center md:text-left`}>
                                    <p className="text-[2.2rem] md:text-[1.7rem] font-medium">Student Branch</p>
                                    <p className="text-[1.5rem] md:text-[1.15rem] font-light">Manipal University Jaipur</p>
                                </div>
@@ -99,7 +99,7 @@ export default function Footer() {
                            </div>
                        </div>
                    </div>
-                   <div className="pb-2"><p className="text-center">Made with ❤️ by Pujan Modha</p></div>
+                   <div className="pb-2"><p className="text-center text-sm">MADE WITH <span className="animate-pulse">❤️</span>️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️ BY PUJAN MODHA</p></div>
                </div>
             </div>
         </>
