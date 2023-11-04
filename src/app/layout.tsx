@@ -1,13 +1,13 @@
 import "~/styles/globals.css";
 
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import { headers } from "next/headers";
 import { TRPCReactProvider } from "~/trpc/react";
 import Navbar from "~/app/_components/navbar";
 import Footer from "~/app/_components/footer";
 import React from "react";
 
-const inter = Inter({
+const open_sans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body className={`font-sans ${open_sans.variable}`}>
       <Navbar/>
       <div className="min-h-screen">
           <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>

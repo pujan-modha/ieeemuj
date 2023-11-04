@@ -1,6 +1,7 @@
 "use client"
 
 import {Montserrat} from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
 import logo from "../assets/ieee-logo.svg";
 import React from "react";
@@ -11,6 +12,11 @@ import Link from "next/link";
 const montserrat = Montserrat({
     subsets: ["latin"],
     variable: "--font-sans",
+});
+
+const jetbrains_mono = JetBrains_Mono({
+    subsets: ["latin"],
+    variable: "--font-mono",
 });
 export default function Footer() {
     return(
@@ -99,7 +105,7 @@ export default function Footer() {
                            </div>
                        </div>
                    </div>
-                   <div className="pb-2"><p className="text-center text-sm">MADE WITH <span className="animate-pulse">❤️</span>️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️ BY PUJAN MODHA</p></div>
+                   <div className={`font-mono ${jetbrains_mono.variable} pb-2`}><p className="text-center text-sm">MADE WITH <span className="animate-pulse">❤️</span>️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️ BY PUJAN MODHA</p></div>
                </div>
             </div>
         </>
