@@ -15,7 +15,7 @@ export default function Navbar() {
     return(
         <>
             <div className="bg-ieeeblue w-full max-h-20 z-20 sticky top-0">
-                <div className="max-w-7xl flex flex-row items-center justify-between mx-auto px-6 lg:px-8">
+                <div className="max-w-7xl flex flex-row items-center justify-between mx-auto px-4 lg:px-8">
                     <Link href="/" className="flex items-center ml-0 pt-2">
                         <div className="grid grid-rows-2 lg:scale-90">
                             <div>

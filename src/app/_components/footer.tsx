@@ -16,7 +16,7 @@ export default function Footer() {
     return(
         <>
             <div id="footer" className="bottom-0 mb-0 w-full z-20 min-h-96 text-white lg:bg-fixed">
-               <div className="max-w-7xl mx-auto px-6 lg:px-8">
+               <div className="max-w-7xl mx-auto px-4 lg:px-8">
                    <div className="grid grid-cols-1 lg:grid-cols-2 text-white text-sm font-medium py-16 lg:py-24">
                        <div className="flex flex-col">
                            <div className="flex flex-col mx-auto lg:mx-0 md:flex-row">
