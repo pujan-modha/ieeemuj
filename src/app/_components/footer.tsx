@@ -30,6 +30,7 @@ export default function Footer() {
                                    {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
                                    <Image src={logo} alt="logo" className="w-64 md:w-72 md:pr-6"/>
                                </div>
+                               <hr className="md:hidden my-1"/>
                                <div className={`font-sans ${montserrat.variable} grid grid-rows-2 leading-none my-auto md:pl-6 text-center md:text-left`}>
                                    <p className="text-[2.2rem] md:text-[1.7rem] font-medium">Student Branch</p>
                                    <p className="text-[1.5rem] md:text-[1.15rem] font-light">Manipal University Jaipur</p>

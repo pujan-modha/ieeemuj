@@ -17,10 +17,11 @@ export default function Navbar() {
             <div className="bg-ieeeblue w-full max-h-20 z-20 sticky top-0">
                 <div className="max-w-7xl flex flex-row items-center justify-between mx-auto px-4 lg:px-8">
                     <Link href="/" className="flex items-center ml-0 pt-2">
-                        <div className="grid grid-rows-2 scale-90">
-                            <div>
+                        <div className="grid grid-rows-2">
+                            <div className="mx-auto">
                                 {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-                                <Image src={logo} alt="logo" className="w-[144px] lg:w-36 lg:pr-0"/>
+                                <Image src={logo} alt="logo" className="w-[144px] lg:w-36 lg:px-3"/>
+                                <hr className="my-0.5"/>
                             </div>
                             <div className={`font-sans ${montserrat.variable} text-white`}>
                                 <p className="text-xs font-semibold">STUDENT BRANCH MUJ</p>

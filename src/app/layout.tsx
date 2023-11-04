@@ -15,7 +15,7 @@ const open_sans = Open_Sans({
 export const metadata = {
   title: "IEEE SB MUJ",
   description: "IEEE Student Branch, Manipal University Jaipur is a group of driven individuals striving to create and spread awareness about various technologies that surround us.",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/favicon.svg" }],
 };
 
 export default function RootLayout({
