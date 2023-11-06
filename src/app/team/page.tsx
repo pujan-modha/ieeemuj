@@ -4,7 +4,7 @@ import {CCTeamCard} from "~/app/_components/team_card";
 export default function Page() {
     return(
         <>
-            <div className="bg-red-300">
+            <div>
                 <div id="parallax" className="w-full py-12 bg-fixed">
                     <div className="max-w-7xl mx-auto px-4 lg:px-8">
                         <p className="text-5xl text-center font-bold text-white">TEAM</p>
