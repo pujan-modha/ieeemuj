@@ -3,8 +3,8 @@
 import {Montserrat} from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
-import logo from "../assets/ieee-logo.svg";
-import muj_dome from "../assets/muj_dome.svg";
+import logo from "~/app/_assets/ieee-logo.svg";
+import muj_dome from "~/app/_assets/muj_dome.svg";
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin, faSquareInstagram, faSquareFacebook, faSquareYoutube} from "@fortawesome/free-brands-svg-icons";
@@ -22,7 +22,7 @@ const jetbrains_mono = JetBrains_Mono({
 export default function Footer() {
     return(
         <>
-            <div id="parallax" className="bottom-0 mb-0 w-full z-20 min-h-96 text-white lg:bg-fixed">
+            <div id="parallax" className="bottom-0 mb-0 w-full z-20 min-h-96 text-white bg-fixed">
                <div className="max-w-7xl mx-auto px-4 lg:px-8">
                    <div className="grid grid-cols-1 lg:grid-rows-2 text-white text-sm font-medium py-16 lg:py-24 lg:gap-x-8">
                        <div>

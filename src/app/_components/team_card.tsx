@@ -1,4 +1,4 @@
-import pujan from "../assets/Pujan.jpg";
+import pujan from "~/app/_assets/Pujan.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

@@ -1,6 +1,6 @@
 "use client"
 
-import logo from "../assets/ieee-logo.svg";
+import logo from "~/app/_assets/ieee-logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
