@@ -24,10 +24,10 @@ export default function Footer() {
         <>
             <div id="parallax" className="bottom-0 mb-0 w-full z-20 min-h-96 text-white bg-fixed">
                <div className="max-w-7xl mx-auto px-4 lg:px-8">
-                   <div className="grid grid-cols-1 lg:grid-rows-2 text-white text-sm font-medium py-16 lg:py-24 lg:gap-x-8">
+                   <div className="grid grid-cols-1 lg:grid-rows-2 text-white text-sm font-medium py-16 lg:py-20 lg:gap-x-8">
                        <div>
                            <div className="grid grid-cols-1 lg:grid-cols-2 md:mx-auto lg:my-4">
-                               <div className="flex flex-col mx-auto lg:mx-0 md:flex-row mb-8 md:mb-0">
+                               <div className="flex flex-col mx-auto lg:mx-0 md:flex-row mb-8 md:mb-4 lg:mb-0">
                                    <div className="md:border-r-2 mx-auto md:mx-0 my-auto">
                                        {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
                                        <Image src={logo} alt="logo" className="w-64 md:w-72 md:pr-4 md:py-1"/>
@@ -121,12 +121,12 @@ export default function Footer() {
                                </div>
                                <div className="mt-6 lg:mt-0">
                                    <p className="text-xl font-semibold pb-2">Address</p>
-                                   <p className="text-base leading-6">Manipal University Jaipur, Dehmi Kalan, Near GVK Toll Plaza, Jaipur-Ajmer Expressway, Jaipur, Rajasthan 303007</p>
+                                   <p className="text-base leading-6 w-[50vw] md:w-[25vw] lg:w-auto">Manipal University Jaipur, Dehmi Kalan, Near GVK Toll Plaza, Jaipur-Ajmer Expressway, Jaipur, Rajasthan 303007</p>
                                </div>
                            </div>
                        </div>
                    </div>
-                   <div className={`font-mono ${jetbrains_mono.variable} pb-2`}><p className="text-center text-sm">MADE WITH <span className="animate-pulse">❤️</span>️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️ BY PUJAN MODHA</p></div>
+                   <div className={`font-mono ${jetbrains_mono.variable} pb-2`}><p className="text-center text-xs">DESIGNED & DEVELOPED WITH <span className="animate-pulse">❤️</span>️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️ BY PUJAN MODHA</p></div>
                </div>
             </div>
         </>
