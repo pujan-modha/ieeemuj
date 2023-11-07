@@ -99,9 +99,9 @@ export default function Footer() {
                                    <ul className="text-base flex flex-col gap-1">
                                        <li className="leading-6"><Link href="/credits">Website Credits</Link></li>
                                        <li className="leading-6"><Link href="https://jaipur.manipal.edu/">MUJ Official Website</Link></li>
+                                       <li className="leading-6"><Link href="https://cs.ieeemuj.com/">IEEE CS MUJ</Link></li>
+                                       <li className="leading-6"><Link href="https://wie.ieeemuj.com/">IEEE WIE MUJ</Link></li>
                                        <li className="leading-6"><Link href="https://www.ieee.org/">IEEE Official Website</Link></li>
-                                       <li className="leading-6"><Link href="https://site.ieee.org/r1-sac/resources/student-scholarships/">IEEE Scholarship</Link></li>
-                                       <li className="leading-6"><Link href="https://www.ieee.org/membership_services/membership/benefits/benefits.html">IEEE Benefits</Link></li>
                                        <li className="leading-6"><Link href="https://www.ieee.org/membership_services/membership/join/index.html">IEEE Global Membership</Link></li>
                                    </ul>
                                </div>
