@@ -21,7 +21,7 @@ export default function Page() {
                 </div>
                 <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8">
                     <div className="my-16">
-                        <div className="flex flex-col gap-y-24 font-medium">
+                        <div className="flex flex-col gap-y-36 md:gap-y-24 font-medium">
                             <div className="flex flex-col lg:grid lg:grid-cols-12">
                                 <div
                                     className="lg:col-start-1 lg:col-span-4 lg:pr-8 lg:my-auto mb-8 px-8 md:px-0 md:pr-96 lg:px-0">
