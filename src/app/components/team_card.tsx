@@ -1,4 +1,4 @@
-import pujan from "~/app/_assets/Pujan.jpg";
+import pujan from "~/app/assets/Pujan.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -17,8 +17,8 @@ export function ECTeamCard() {
                                 <ul className="flex flex-col items-start text-white text-base font-medium">
                                     <li>
                                         <Link href="/" className="inline-flex gap-2">
-                                            <FontAwesomeIcon icon={faLinkedin} size="xl"/>
-                                            <p className="inline-flex hover:underline hover:underline-offset-2">Linkedin<span>
+                                            <FontAwesomeIcon icon={faSquareGithub} size="xl"/>
+                                            <p className="inline-flex hover:underline hover:underline-offset-2">GitHub<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" /></svg>
                                         </span>
                                             </p>
@@ -26,8 +26,8 @@ export function ECTeamCard() {
                                     </li>
                                     <li>
                                         <Link href="/" className="inline-flex gap-2">
-                                            <FontAwesomeIcon icon={faSquareGithub} size="xl"/>
-                                            <p className="inline-flex hover:underline hover:underline-offset-2">GitHub<span>
+                                            <FontAwesomeIcon icon={faLinkedin} size="xl"/>
+                                            <p className="inline-flex hover:underline hover:underline-offset-2">Linkedin<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" /></svg>
                                         </span>
                                             </p>
@@ -48,8 +48,8 @@ export function ECTeamCard() {
                     </div>
                 </div>
                 <div className="my-4">
-                    <p className="text-center text-xl font-bold">Pujan Modha</p>
-                    <p className="text-center text-lg">Webmaster</p>
+                    <p className="text-center text-xl font-semibold">Pujan Modha</p>
+                    <p className="text-center font-medium text-ieeegray">Webmaster</p>
                 </div>
             </div>
         </>
@@ -68,8 +68,8 @@ export function CCTeamCard() {
                                 <ul className="flex flex-col items-start text-white text-base font-medium">
                                     <li>
                                         <Link href="/" className="inline-flex gap-2">
-                                            <FontAwesomeIcon icon={faLinkedin} size="xl"/>
-                                            <p className="inline-flex hover:underline hover:underline-offset-2">Linkedin<span>
+                                            <FontAwesomeIcon icon={faSquareGithub} size="xl"/>
+                                            <p className="inline-flex hover:underline hover:underline-offset-2">GitHub<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" /></svg>
                                         </span>
                                             </p>
@@ -77,8 +77,8 @@ export function CCTeamCard() {
                                     </li>
                                     <li>
                                         <Link href="/" className="inline-flex gap-2">
-                                            <FontAwesomeIcon icon={faSquareGithub} size="xl"/>
-                                            <p className="inline-flex hover:underline hover:underline-offset-2">GitHub<span>
+                                            <FontAwesomeIcon icon={faLinkedin} size="xl"/>
+                                            <p className="inline-flex hover:underline hover:underline-offset-2">Linkedin<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" /></svg>
                                         </span>
                                             </p>
@@ -99,8 +99,8 @@ export function CCTeamCard() {
                     </div>
                 </div>
                 <div className="my-4">
-                    <p className="text-center text-xl font-bold">Pujan Modha</p>
-                    <p className="text-center text-lg">Webmaster</p>
+                    <p className="text-center text-xl font-semibold">Pujan Modha</p>
+                    <p className="text-center font-medium text-ieeegray">Webmaster</p>
                 </div>
             </div>
         </>

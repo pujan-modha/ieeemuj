@@ -1,15 +1,17 @@
 import "~/styles/globals.css";
 
-import { Open_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { headers } from "next/headers";
 import { TRPCReactProvider } from "~/trpc/react";
-import Navbar from "~/app/_components/navbar";
-import Footer from "~/app/_components/footer";
+import Navbar from "~/app/components/navbar";
+import Footer from "~/app/components/footer";
 import React from "react";
+import useLenis from "~/app/hooks/useLenis";
 
-const open_sans = Open_Sans({
+const global_fonts = Montserrat({
   subsets: ["latin"],
   variable: "--font-sans",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata = {
@@ -26,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${open_sans.variable}`}>
+      <body className={`font-sans ${global_fonts.variable}`}>
       <Navbar/>
       <div className="min-h-screen">
           <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>

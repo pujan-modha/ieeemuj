@@ -1,19 +1,13 @@
 "use client"
 
-import {Montserrat} from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
-import logo from "~/app/_assets/ieee-logo.svg";
-import muj_dome from "~/app/_assets/muj_dome.svg";
+import logo from "~/app/assets/ieee-logo.svg";
+import muj_dome from "~/app/assets/muj_dome.svg";
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin, faSquareInstagram, faSquareFacebook, faSquareYoutube} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-
-const montserrat = Montserrat({
-    subsets: ["latin"],
-    variable: "--font-sans",
-});
 
 const jetbrains_mono = JetBrains_Mono({
     subsets: ["latin"],
@@ -27,13 +21,13 @@ export default function Footer() {
                    <div className="grid grid-cols-1 lg:grid-rows-2 text-white text-sm font-medium py-16 lg:py-20 lg:gap-x-8">
                        <div>
                            <div className="grid grid-cols-1 lg:grid-cols-2 md:mx-auto lg:my-4">
-                               <div className="flex flex-col mx-auto lg:mx-0 md:flex-row mb-8 md:mb-4 lg:mb-0">
+                               <div className="flex flex-col mx-auto lg:mx-0 md:flex-row mb-8 md:mb-4 lg:mb-0 select-none">
                                    <div className="md:border-r-2 mx-auto md:mx-0 my-auto">
                                        {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
                                        <Image src={logo} alt="logo" className="w-64 md:w-72 md:pr-4 md:py-1"/>
                                    </div>
                                    <hr className="md:hidden my-1"/>
-                                   <div className={`font-sans ${montserrat.variable} flex flex-col leading-none md:pl-4 my-auto text-center md:text-left`}>
+                                   <div className="flex flex-col leading-none md:pl-4 my-auto text-center md:text-left">
                                        {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
                                        <Image src={muj_dome} alt="MUJ Dome" className="w-32 mx-auto pb-0.5"/>
                                        <p className="text-[2.2rem] md:text-[1.5rem] font-medium">Student Branch</p>
@@ -103,6 +97,7 @@ export default function Footer() {
                                <div className="mt-6 lg:mt-0">
                                    <p className="text-xl font-semibold pb-2">Links</p>
                                    <ul className="text-base flex flex-col gap-1">
+                                       <li className="leading-6"><Link href="/credits">Website Credits</Link></li>
                                        <li className="leading-6"><Link href="https://jaipur.manipal.edu/">MUJ Official Website</Link></li>
                                        <li className="leading-6"><Link href="https://www.ieee.org/">IEEE Official Website</Link></li>
                                        <li className="leading-6"><Link href="https://site.ieee.org/r1-sac/resources/student-scholarships/">IEEE Scholarship</Link></li>

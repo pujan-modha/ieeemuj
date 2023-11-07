@@ -1,11 +1,11 @@
 "use client"
 
+import Hero from "~/app/components/hero";
 import useLenis from "~/app/hooks/useLenis";
-import Hero from "~/app/_components/hero";
 
 export default function Home() {
     useLenis();
-  return (
+    return (
     <>
       <div>
         <Hero/>
