@@ -6,7 +6,6 @@ import { TRPCReactProvider } from "~/trpc/react";
 import Navbar from "~/app/components/navbar";
 import Footer from "~/app/components/footer";
 import React from "react";
-import useLenis from "~/app/hooks/useLenis";
 
 const global_fonts = Montserrat({
   subsets: ["latin"],

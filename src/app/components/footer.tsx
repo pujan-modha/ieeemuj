@@ -1,5 +1,3 @@
-"use client"
-
 import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
 import logo from "~/app/assets/ieee-logo.svg";
