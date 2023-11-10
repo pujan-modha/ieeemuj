@@ -7,6 +7,7 @@ import Navbar from "~/app/components/navbar";
 import Footer from "~/app/components/footer";
 import React from "react";
 
+
 const global_fonts = Montserrat({
   subsets: ["latin"],
   variable: "--font-sans",
