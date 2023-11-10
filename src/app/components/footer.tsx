@@ -16,13 +16,13 @@ export default function Footer() {
         <>
             <div id="parallax" className="bottom-0 mb-0 w-full z-20 min-h-96 text-white bg-fixed">
                <div className="max-w-7xl mx-auto px-4 lg:px-8">
-                   <div className="grid grid-cols-1 lg:grid-rows-2 text-white text-sm font-medium py-16 lg:py-20 lg:gap-x-8">
+                   <div className="grid grid-cols-1 lg:grid-rows-2 text-white text-sm font-medium py-16 lg:py-20 lg:gap-y-8">
                        <div>
                            <div className="grid grid-cols-1 lg:grid-cols-2 md:mx-auto lg:my-4">
                                <div className="flex flex-col mx-auto lg:mx-0 md:flex-row mb-8 md:mb-4 lg:mb-0 select-none">
                                    <div className="md:border-r-2 mx-auto md:mx-0 my-auto">
                                        {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-                                       <Image src={logo} alt="logo" className="w-64 md:w-72 md:pr-4 md:py-1"/>
+                                       <Image src={logo} alt="logo" className="w-56 md:w-72 md:pr-4 md:py-1"/>
                                    </div>
                                    <hr className="md:hidden my-1"/>
                                    <div className="flex flex-col leading-none md:pl-4 my-auto text-center md:text-left">
@@ -32,79 +32,96 @@ export default function Footer() {
                                        <p className="text-[1.5rem] md:text-[1rem] font-light">Manipal University Jaipur</p>
                                    </div>
                                </div>
-                               <div className="mt-6">
-                                   <ul className="grid grid-cols-1 md:grid-cols-2 justify-between content-evenly text-base font-medium">
-                                       <li>
-                                           <Link href="https://www.linkedin.com/company/ieeesbmuj/" className="inline-flex"><FontAwesomeIcon icon={faLinkedin} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeesbmuj</p>
-                                               <span>
+                               <div className="grid grid-cols-1 md:grid-cols-2">
+                                   <div className="mt-6 lg:mt-0">
+                                       <p className="text-xl font-semibold">Follow Us</p>
+                                       <hr className="pb-2 border-0 border-t-2 w-56 border-white"/>
+                                       <div>
+                                           <ul className="text-base gap-3 font-medium content-evenly">
+                                               <li>
+                                                   <Link href="https://www.linkedin.com/company/ieeesbmuj/" className="inline-flex"><FontAwesomeIcon icon={faLinkedin} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeesbmuj</p>
+                                                       <span>
                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                            <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                                        </svg>
                                    </span>
-                                           </Link>
-                                       </li>
-                                       <li>
-                                           <Link href="https://www.instagram.com/ieeemuj/" className="inline-flex"><FontAwesomeIcon icon={faSquareInstagram} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeemuj</p>
-                                               <span>
+                                                   </Link>
+                                               </li>
+                                               <li>
+                                                   <Link href="https://www.instagram.com/ieeemuj/" className="inline-flex"><FontAwesomeIcon icon={faSquareInstagram} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeemuj</p>
+                                                       <span>
                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                            <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                                        </svg>
                                    </span>
-                                           </Link>
-                                       </li>
-                                       <li>
-                                           <Link href="https://www.facebook.com/ieeemuj/" className="inline-flex"><FontAwesomeIcon icon={faSquareFacebook} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeemuj</p>
-                                               <span>
+                                                   </Link>
+                                               </li>
+                                               <li>
+                                                   <Link href="https://www.facebook.com/ieeemuj/" className="inline-flex"><FontAwesomeIcon icon={faSquareFacebook} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeemuj</p>
+                                                       <span>
                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                            <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                                        </svg>
                                    </span>
-                                           </Link>
-                                       </li>
-                                       <li>
-                                           <Link href="https://www.youtube.com/@ieeemuj6141" className="inline-flex"><FontAwesomeIcon icon={faSquareYoutube} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeemuj6141</p>
-                                               <span>
+                                                   </Link>
+                                               </li>
+                                               <li>
+                                                   <Link href="https://www.youtube.com/@ieeemuj6141" className="inline-flex"><FontAwesomeIcon icon={faSquareYoutube} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeemuj6141</p>
+                                                       <span>
                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                            <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                                        </svg>
                                    </span>
-                                           </Link>
-                                       </li>
-                                   </ul>
+                                                   </Link>
+                                               </li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                                   <div className="mt-6 lg:mt-0">
+                                       <p className="text-xl font-semibold">Contact Us</p>
+                                       <hr className="pb-2 border-0 border-t-2 w-56 border-white"/>
+                                       <div className="text-base flex flex-col gap-3">
+                                           <ul>
+                                               <li><Link href="tel:+919721490618">+91 97214 90618</Link></li>
+                                               <li>Sriansh Raj</li>
+                                           </ul>
+                                           <ul>
+                                               <li><Link href="tel:+919569516125">+91 95695 16125</Link></li>
+                                               <li>Atul Raj Sharma</li>
+                                           </ul>
+                                           <ul>
+                                               <li><Link href="mailto:ieee@muj.manipal.edu">ieee@muj.manipal.edu</Link></li>
+                                           </ul>
+                                       </div>
+                                   </div>
                                </div>
                            </div>
                        </div>
                        <div>
                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between">
                                <div className="mt-6 lg:mt-0">
-                                   <p className="text-xl font-semibold pb-2">Contact Us</p>
-                                   <div className="text-base flex flex-col gap-3">
-                                       <ul>
-                                           <li><Link href="tel:+919721490618">+91 97214 90618</Link></li>
-                                           <li>Sriansh Raj</li>
-                                       </ul>
-                                       <ul>
-                                           <li><Link href="tel:+919569516125">+91 95695 16125</Link></li>
-                                           <li>Atul Raj Sharma</li>
-                                       </ul>
-                                       <ul>
-                                           <li><Link href="mailto:ieee@muj.manipal.edu">ieee@muj.manipal.edu</Link></li>
-                                       </ul>
-                                   </div>
-                               </div>
-                               <div className="mt-6 lg:mt-0">
-                                   <p className="text-xl font-semibold pb-2">Links</p>
+                                   <p className="text-xl font-semibold">Links</p>
+                                   <hr className="pb-2 border-0 border-t-2 w-56 border-white"/>
                                    <ul className="text-base flex flex-col gap-1">
                                        <li className="leading-6"><Link href="/credits">Website Credits</Link></li>
                                        <li className="leading-6"><Link href="https://jaipur.manipal.edu/">MUJ Official Website</Link></li>
-                                       <li className="leading-6"><Link href="https://cs.ieeemuj.com/">IEEE CS MUJ</Link></li>
-                                       <li className="leading-6"><Link href="https://wie.ieeemuj.com/">IEEE WIE MUJ</Link></li>
                                        <li className="leading-6"><Link href="https://www.ieee.org/">IEEE Official Website</Link></li>
                                        <li className="leading-6"><Link href="https://www.ieee.org/membership_services/membership/join/index.html">IEEE Global Membership</Link></li>
                                    </ul>
                                </div>
                                <div className="mt-6 lg:mt-0">
-                                   <p className="text-xl font-semibold pb-2">Faculty Messages</p>
+                                   <p className="text-xl font-semibold">Resources</p>
+                                   <hr className="pb-2 border-0 border-t-2 w-56 border-white"/>
+                                   <ul className="text-base flex flex-col gap-1">
+                                       <li className="leading-6"><Link href="https://mujcentral.in/">MUJ Central</Link></li>
+                                       <li className="leading-6"><Link href="https://cs.ieeemuj.com/">IEEE CS MUJ</Link></li>
+                                       <li className="leading-6"><Link href="https://wie.ieeemuj.com/">IEEE WIE MUJ</Link></li>
+                                       <li className="leading-6"><Link href="https://certificates.ieeemuj.com/">Get Certificate</Link></li>
+                                   </ul>
+                               </div>
+                               <div className="mt-6 lg:mt-0">
+                                   <p className="text-xl font-semibold">Faculty Messages</p>
+                                   <hr className="pb-2 border-0 border-t-2 w-56 border-white"/>
                                    <ul className="text-base flex flex-col gap-1">
                                        <li className="leading-6"><Link href="/">{`Director's Message`}</Link></li>
                                        <li className="leading-6"><Link href="/">{`Coordinator's Message`}</Link></li>
@@ -113,8 +130,14 @@ export default function Footer() {
                                    </ul>
                                </div>
                                <div className="mt-6 lg:mt-0">
-                                   <p className="text-xl font-semibold pb-2">Address</p>
-                                   <p className="text-base leading-6 w-[50vw] md:w-[25vw] lg:w-auto">Manipal University Jaipur, Dehmi Kalan, Near GVK Toll Plaza, Jaipur-Ajmer Expressway, Jaipur, Rajasthan 303007</p>
+                                   <p className="text-xl font-semibold">Address</p>
+                                   <hr className="pb-2 border-0 border-t-2 w-56 border-white"/>
+                                   <p className="text-base leading-6 flex flex-col">
+                                       <span>Manipal University Jaipur,</span>
+                                       <span>Dehmi Kalan, Near GVK Toll Plaza,</span>
+                                       <span>Jaipur-Ajmer Expressway,</span>
+                                       <span>Jaipur, Rajasthan 303007</span>
+                                   </p>
                                </div>
                            </div>
                        </div>

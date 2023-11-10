@@ -47,9 +47,12 @@ export default function Navbar() {
                         {/* Mobile navigation toggle */}
                         <div className="col-span-10 col-start-13 lg:hidden flex text-white">
                             <button onClick={() => setToggleMenu(!toggleMenu)}>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                                {!toggleMenu ? <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg></div> : <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
+                                </div>}
                             </button>
                         </div>
                     </div>
@@ -59,7 +62,7 @@ export default function Navbar() {
                             !toggleMenu ? "h-0" : "h-screen bg-fixed"
                         }`}>
                             <div className="flex items-center justify-center h-screen">
-                                <div className="grid gap-12 text-white font-medium text-center text-xl -mt-16">
+                                <div className="grid gap-12 text-white font-medium text-center text-xl -mt-32">
                                     <Link href="/" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>HOME</Link>
                                     <Link href="/events" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/events" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>EVENTS</Link>
                                     <Link href="/blogs" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/blogs" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>BLOGS</Link>
