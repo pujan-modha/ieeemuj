@@ -57,9 +57,9 @@ export default function Navbar() {
                         </div>
                     </div>
                     {/* mobile navigation */}
-                    <div className=" bg-ieeeblue grid mx-auto absolute top-16 left-0 overflow-hidden">
-                        <div className={`z-20 overflow-hidden lg:hidden duration-700 ${
-                            !toggleMenu ? "h-screen w-screen -ml-[100vw]" : "ml-0 h-screen w-screen bg-fixed"
+                    <div className="w-screen grid mx-auto absolute top-16 left-0 overflow-hidden">
+                        <div className={`z-20 overflow-hidden lg:hidden duration-700 bg-ieeeblue ${
+                            !toggleMenu ? "h-screen w-screen ml-[100vw]" : "ml-0 h-screen w-screen bg-fixed"
                         }`}>
                             <div className="flex items-center justify-center h-screen">
                                 <div className="grid gap-12 text-white font-medium text-center text-xl -mt-32">
@@ -67,9 +67,9 @@ export default function Navbar() {
                                     <Link href="/events" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/events" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>EVENTS</Link>
                                     <Link href="/blogs" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/blogs" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>BLOGS</Link>
                                     <Link href="/societies" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/societies" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>SOCIETIES</Link>
-                                    <Link href="/team" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/team" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} text-center px-4 py-2 rounded-full`}>TEAM</Link>
+                                    <Link href="/team" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/team" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>TEAM</Link>
                                     <Link href="/contact-us" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/contact-us" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>CONTACT US</Link>
-                                    <Link href="/" onClick={() => setToggleMenu(!toggleMenu)} className="border-2 border-white text-white hover:bg-white hover:text-ieeeblue px-4 py-2 rounded-full">JOIN NOW</Link>
+                                    <Link href="/" onClick={() => setToggleMenu(!toggleMenu)} className="border-2 border-white text-center hover:bg-white hover:text-ieeeblue px-4 py-2 rounded-full">JOIN NOW</Link>
                                 </div>
                             </div>
                         </div>

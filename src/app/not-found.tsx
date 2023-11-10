@@ -13,7 +13,8 @@ export default function NotFound(){
                         <div className="text-left">
                             <h1 className="text-4xl text-ieeeblue font-semibold">ERROR!!</h1>
                             <h1 className="text-9xl font-black text-ieeeblue">404</h1>
-                            <p className="text-xl lg:text-3xl pb-8 text-ieeedarkblue font-medium">{`Looks like you have reached the Jogger's Park.`}</p>
+                            <p className="text-xl lg:text-3xl text-ieeedarkblue font-medium">{`Looks like you have reached the`}</p>
+                            <p className="text-xl lg:text-3xl pb-8 text-ieeedarkblue font-medium">{`Jogger's Park.`}</p>
                             <Link href="/"
                                className="px-8 py-3 text-lg font-medium border-2 border-ieeeblue hover:text-white rounded-full hover:bg-ieeeblue text-ieeeblue">GO DOME</Link>
                         </div>
