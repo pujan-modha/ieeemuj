@@ -2,7 +2,6 @@
 
 import useLenis from "~/app/hooks/useLenis";
 import React from "react";
-import {CCTeamCard, ECTeamCard} from "~/app/components/team_card";
 
 export default function Page() {
     useLenis();

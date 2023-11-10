@@ -57,9 +57,9 @@ export default function Navbar() {
                         </div>
                     </div>
                     {/* mobile navigation */}
-                    <div className="w-full bg-ieeeblue grid mx-auto px-4 absolute top-16">
+                    <div className=" bg-ieeeblue grid mx-auto absolute top-16 left-0 overflow-hidden">
                         <div className={`z-20 overflow-hidden lg:hidden duration-700 ${
-                            !toggleMenu ? "h-0" : "h-screen bg-fixed"
+                            !toggleMenu ? "h-screen w-screen -ml-[100vw]" : "ml-0 h-screen w-screen bg-fixed"
                         }`}>
                             <div className="flex items-center justify-center h-screen">
                                 <div className="grid gap-12 text-white font-medium text-center text-xl -mt-32">
