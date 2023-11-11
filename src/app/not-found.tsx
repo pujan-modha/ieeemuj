@@ -2,11 +2,19 @@
 
 import useLenis from "~/app/hooks/useLenis";
 import Link from "next/link";
+import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import React from "react";
 
 export default function NotFound(){
     useLenis();
     return(
         <>
+            <ProgressBar
+                height="4px"
+                color="#66ccff"
+                options={{ showSpinner: false }}
+                shallowRouting
+            />
             <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 -mt-16">
                 <div className="h-screen flex items-center">
                     <div className="overflow-hidden grid grid-cols-1 md:grid-cols-2 md:w-full pb-8">

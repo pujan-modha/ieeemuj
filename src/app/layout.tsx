@@ -19,6 +19,8 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.svg" }],
 };
 
+
+
 export default function RootLayout({
 
   children,

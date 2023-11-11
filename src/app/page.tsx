@@ -5,11 +5,18 @@ import useLenis from "~/app/hooks/useLenis";
 import Link from "next/link";
 import React from "react";
 import CountUp from "react-countup";
+import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 
 export default function Home() {
     useLenis();
     return (
     <>
+        <ProgressBar
+            height="4px"
+            color="#66ccff"
+            options={{ showSpinner: false }}
+            shallowRouting
+        />
       <div>
         <Hero/>
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
