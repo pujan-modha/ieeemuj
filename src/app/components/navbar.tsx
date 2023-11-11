@@ -62,7 +62,7 @@ export default function Navbar() {
                             !toggleMenu ? "h-screen w-screen -ml-[100vw]" : "ml-0 h-screen w-screen bg-fixed"
                         }`}>
                             <div className="flex items-center justify-center h-screen">
-                                <div className="grid gap-12 text-white font-medium text-center text-xl -mt-16">
+                                <div className="grid gap-10 text-white font-medium text-center text-xl -mt-24">
                                     <Link href="/" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>HOME</Link>
                                     <Link href="/events" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/events" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>EVENTS</Link>
                                     <Link href="/blogs" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/blogs" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>BLOGS</Link>
