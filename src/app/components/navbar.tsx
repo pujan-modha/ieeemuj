@@ -57,12 +57,12 @@ export default function Navbar() {
                         </div>
                     </div>
                     {/* mobile navigation */}
-                    <div className="w-screen grid mx-auto absolute top-16 left-0 overflow-hidden">
+                    <div className="bg-ieeeblue grid mx-auto absolute top-16 left-0 overflow-hidden">
                         <div className={`z-20 overflow-hidden lg:hidden duration-700 bg-ieeeblue ${
-                            !toggleMenu ? "h-screen w-screen ml-[100vw]" : "ml-0 h-screen w-screen bg-fixed"
+                            !toggleMenu ? "h-screen w-screen -ml-[100vw]" : "ml-0 h-screen w-screen bg-fixed"
                         }`}>
                             <div className="flex items-center justify-center h-screen">
-                                <div className="grid gap-12 text-white font-medium text-center text-xl -mt-32">
+                                <div className="grid gap-12 text-white font-medium text-center text-xl -mt-16">
                                     <Link href="/" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>HOME</Link>
                                     <Link href="/events" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/events" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>EVENTS</Link>
                                     <Link href="/blogs" onClick={() => setToggleMenu(!toggleMenu)} className={`${pathname == "/blogs" ? "bg-white text-ieeeblue underline underline-offset-4 decoration-2 decoration-white transition duration-500" : "hover:underline underline-offset-4 decoration-2"} px-4 py-2 rounded-full`}>BLOGS</Link>

@@ -14,7 +14,7 @@ const jetbrains_mono = JetBrains_Mono({
 export default function Footer() {
     return(
         <>
-            <div id="parallax" className="bottom-0 mb-0 w-full z-20 min-h-96 text-white bg-fixed">
+            <div id="grids" className="bottom-0 mb-0 w-full z-20 text-white bg-fixed">
                <div className="max-w-7xl mx-auto px-4 lg:px-8">
                    <div className="grid grid-cols-1 lg:grid-rows-2 text-white text-sm font-medium py-16 lg:py-20 lg:gap-y-8">
                        <div>

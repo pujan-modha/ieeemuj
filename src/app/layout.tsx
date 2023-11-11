@@ -1,5 +1,4 @@
 import "~/styles/globals.css";
-
 import { Montserrat } from "next/font/google";
 import { headers } from "next/headers";
 import { TRPCReactProvider } from "~/trpc/react";
