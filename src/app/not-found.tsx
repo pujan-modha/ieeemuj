@@ -24,6 +24,7 @@ export default function NotFound(){
                             <p className="text-xl lg:text-3xl text-ieeedarkblue font-medium">{`Looks like you have reached the`}</p>
                             <p className="text-xl lg:text-3xl pb-8 text-ieeedarkblue font-medium">{`Jogger's Park.`}</p>
                             <Link href="/"
+                                  passHref
                                className="px-8 py-3 text-lg font-medium border-2 border-ieeeblue hover:text-white rounded-full hover:bg-ieeeblue text-ieeeblue">GO DOME</Link>
                         </div>
                     </div>
